@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Unit test for minimized MD5.js</title>
+	<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.10.0.css">
+</head>
+<body>
+	<dl>
+		<dt>compile with closure compiler:</dt>
+		<dd><code>java -jar closure-compiler.jar --compilation_level ADVANCED_OPTIMIZATIONS --js md5.js --js_output_file md5.min.js</code></dd>
+	</dl>
+
+	<div id="qunit"></div>
+	<script src="http://code.jquery.com/qunit/qunit-1.10.0.js"></script>
+	<script src="md5.min.js"></script>
+	<script src="test.js"></script>
+</body>
+</html>
+
+<!--
+vim: ts=4 sw=4 ai nowrap
+-->
